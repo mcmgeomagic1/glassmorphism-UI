@@ -71,27 +71,6 @@
 			border: 2px solid transparent;
 			display: none;
 		}
-		@keyframes zoomOne {
-			0%{ 
-				margin-right: -50em;
-				transform:  scale(0.98);
-				transition: .5s;
-			}
-		}
-		@keyframes zoomOne2 {
-			0%{ 
-				margin-right: 0;
-
-			}
-			50%{
-				margin-left: 50em;
-			}
-
-			100%{
-				opacity: .2;
-				display: none;
-			}
-		}
 		.glass-top{
 			display: flex;
 			width: 100%;
