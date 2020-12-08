@@ -1,0 +1,131 @@
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body,html {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: linear-gradient(to top, rgba(09,07,09,.9), rgba(0,0,0,1)), url('../imagens/volvo.jpg') ;
+			background-size: cover;
+			background-position: top;
+			background-repeat: no-repeat;
+			color: white;
+			font-size: 16px;
+			font-family: "lato",sans-serif;
+			overflow-x: hidden;
+		}
+
+		body:after{
+			content: "GLASSMORPHIRMS";
+			position: absolute;
+			font-size: 800%;
+			font-weight: bold;
+			letter-spacing: 15px;
+			z-index: 1;
+			opacity: .1;
+		}
+		.container{
+			width: 430px;
+			height: 100%;
+			background-image: url('../imagens/volvo.jpg');
+			background-size: cover;
+			background-position: bottom;
+			background-repeat: no-repeat;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			z-index: 2;
+		}
+
+		button{
+			background: none;
+			border: 1px solid white;
+			color: white;
+			padding: 1em;
+			width: 190px;
+			border-radius: 5px;
+			margin-top: 35em;
+			cursor: pointer;
+		}
+		button:hover {
+			background: rgba(255,255,255,.1);
+			transform: scale(1.01);
+			transition: .2s;
+		}
+		button i {
+			margin-left: 1em;
+		}
+		.glass{
+			position: absolute;
+			background: rgba(255,255,255,.2);
+			width: 85%;
+			padding: 1em;
+			border-radius: 5%;
+			bottom: 3em;
+			backdrop-filter: blur(15px);
+			border: 2px solid transparent;
+			display: none;
+		}
+		@keyframes zoomOne {
+			0%{ 
+				margin-right: -50em;
+				transform:  scale(0.98);
+				transition: .5s;
+			}
+		}
+		@keyframes zoomOne2 {
+			0%{ 
+				margin-right: 0;
+
+			}
+			50%{
+				margin-left: 50em;
+			}
+
+			100%{
+				opacity: .2;
+				display: none;
+			}
+		}
+		.glass-top{
+			display: flex;
+			width: 100%;
+		}
+		.titulo{
+			width: 80%;
+		}
+		.coracao-div{
+			width: 20%;
+			display: flex;
+			margin-top: .2em;
+			justify-content: flex-end;
+		}
+		.coracao-div i, .glass-footer i {
+			font-size: 130%;
+			opacity: .7;
+		}
+		.coracao-div i:hover, .glass-footer i:hover {
+			opacity: 1;
+			transition: .2s;
+			cursor: pointer;
+		}
+		h1{
+			font-size: 120%;
+			margin-bottom: 1em;
+		}
+		p{
+			opacity: .7;
+			font-size: 90%;
+			margin-bottom: 1em;
+		}
+		.glass-footer{
+			padding-top: .5em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
